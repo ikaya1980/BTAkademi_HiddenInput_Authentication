@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ornekWeb.Models.Firm>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Hoşgeldiniz</h1>
+<p>
+
+</p>
+
+<ul>
+    <li>
+        Bu sayfa son kullanıcıya görünecek sayfa. bunu çeşitli templateler ile değiştiricem.<br />
+        zaten alttaki edit detail butonlarını commentledim.
+        ama bu sayfanın bir de admin paneli versiyonu olacak, o da orjinal haliyle olacak.(Index_eski.cshtml olarak kopyaladım)
+        yani create/edit/delete butonları olacak.
+        admin versiyonunu da Views/Admin/Firm gibi bir klasör altında oluşturmaya çalışıyorum.
+        bunları admincontroller ile yönetmek istiyorum (belki de Controllers klasörünün altında Admin klasörü oluşturulup her biri için ayrı controller yapılmalı?)
+    </li>
+    <li>
+        bu controller altındaki tüm action lar sadece "admin" rolüyle çalışacaklar.
+        ancak diğer controller daki actionlar ise "ziyaretci" rolüyle de çalışabilecek.
+        Authentication olarak microsoft un net core identity kullanıyorum.<br />
+        (bunu farklı bir projede de gösterebilirsiniz, bu proje identity ile oluşturulmuş değil)
+
+    </li>
+    <li>
+        son madde için Details butonuna basar mısınız?
+    </li>
+</ul>
+
+
+@*<p>
+        <a asp-action="Create">Create New</a>
+    </p>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirmName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmName)
+                </td>
+                <td>
+                    @*<a asp-action="Edit" asp-route-id="@item.FirmId">Edit</a> |*@
+                    <a asp-action="Details" asp-route-id="@item.FirmId">Details</a> |
+                    @*<a asp-action="Delete" asp-route-id="@item.FirmId">Delete</a>*@
+                </td>
+            </tr>
+        }
+
+
+
+    </tbody>
+</table>

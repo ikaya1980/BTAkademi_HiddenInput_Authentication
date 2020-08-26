@@ -1,0 +1,32 @@
+﻿@model ornekWeb.Models.Firm
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Firm</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FirmName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FirmName)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <p>
+        bu sayfada <b>@Html.DisplayFor(model => model.FirmName)</b> firması ile ilgili detay bilgiler var.
+        ayrıca <b>@Html.DisplayFor(model => model.FirmName)</b> firmasına mesaj da gönderilecek.
+        mesela <a asp-controller="QuestionAnswer" asp-action="Create" asp-route-id="@Model.FirmId">bu linke</a> tıklanınca QuestionAnswer/Create/@Html.DisplayFor(model => model.FirmId) gibi bir sayfaya yönlenecek ve @Html.DisplayFor(model => model.FirmId) id si ile create formundaki bir hidden değeri set edilecek.
+    </p>
+</div>
+<div>
+    @*<a asp-action="Edit" asp-route-id="@Model.FirmId">Edit</a> |*@
+    <a asp-action="Index">Geri dön</a>
+</div>
