@@ -16,6 +16,7 @@ namespace ornekWeb.Data
 
         public DbSet<Firm> firms { get; set; }
         public DbSet<QuestionAnswer> questionanswers { get; set; }
+        public DbSet<User> Users { get; set; } 
 
     }
 }

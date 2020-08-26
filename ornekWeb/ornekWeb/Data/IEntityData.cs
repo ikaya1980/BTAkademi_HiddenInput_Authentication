@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ornekWeb.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -21,5 +22,16 @@ namespace ornekWeb.Data
 
         int Commit();
 
+    }
+
+    public interface IUserRepository
+    {
+        IQueryable<User> GetAll();
+        User GetById(int UserId);
+        void AddUser(User entity);
+        User GetByLogin(string UserEmail, string UserPassword);
+     
+
+        int Commit();
     }
 }

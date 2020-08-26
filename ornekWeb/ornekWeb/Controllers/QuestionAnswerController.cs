@@ -32,9 +32,15 @@ namespace ornekWeb.Controllers
                 return NotFound();
         }
 
-        public ActionResult Create()
+        public ActionResult Create(int id)
         {
-            return View();
+            //Ekran inputlarının dolu gelmesi için, model dolu gönderilmesi gerekiyor. 
+            QuestionAnswer questionAnswer = new QuestionAnswer()
+            {
+                firmId = id
+            };
+
+            return View(questionAnswer);
         }
 
         [HttpPost]

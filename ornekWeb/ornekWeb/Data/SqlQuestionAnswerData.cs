@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ornekWeb.Data
 {
+
     public class SqlQuestionAnswerData : IEntityData<QuestionAnswer>
     {
         private readonly WebDbContext _context;

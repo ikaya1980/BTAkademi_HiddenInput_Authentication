@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ornekWeb.Models;
 using ornekWeb.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ornekWeb.Controllers
 {
+    [Authorize]
     public class FirmController : Controller
     {
         private readonly IEntityData<Firm> firmData;
@@ -18,12 +20,15 @@ namespace ornekWeb.Controllers
             this.firmData = firmData;
         }
         // GET: FirmController
+
+
         public ActionResult Index()
         {
             return View(firmData.GetAll());
         }
 
         // GET: FirmController/Details/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Details(int id)
         {
             Firm firm = firmData.GetById(id);

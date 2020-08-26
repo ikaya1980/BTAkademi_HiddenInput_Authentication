@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\togy\\source\\repos\\ornekWeb\\ornekWeb\\ornekWeb.csproj": {}
+    "C:\\Users\\Asus\\source\\repos\\ornek_web_docs\\ornekWeb\\ornekWeb\\ornekWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\togy\\source\\repos\\ornekWeb\\ornekWeb\\ornekWeb.csproj": {
+    "C:\\Users\\Asus\\source\\repos\\ornek_web_docs\\ornekWeb\\ornekWeb\\ornekWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\togy\\source\\repos\\ornekWeb\\ornekWeb\\ornekWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\ornek_web_docs\\ornekWeb\\ornekWeb\\ornekWeb.csproj",
         "projectName": "ornekWeb",
-        "projectPath": "C:\\Users\\togy\\source\\repos\\ornekWeb\\ornekWeb\\ornekWeb.csproj",
-        "packagesPath": "C:\\Users\\togy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\togy\\source\\repos\\ornekWeb\\ornekWeb\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\source\\repos\\ornek_web_docs\\ornekWeb\\ornekWeb\\ornekWeb.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\source\\repos\\ornek_web_docs\\ornekWeb\\ornekWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\togy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
