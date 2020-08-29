@@ -74,7 +74,7 @@ namespace ornekWeb
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=User}/{action=UserLogin}/{id?}");
             });
 
             app.UseCookiePolicy();

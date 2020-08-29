@@ -303,3 +303,4 @@ C:\Users\Asus\source\repos\ornek_web_docs\ornekWeb\ornekWeb\obj\Debug\netcoreapp
 C:\Users\Asus\source\repos\ornek_web_docs\ornekWeb\ornekWeb\obj\Debug\netcoreapp3.1\ornekWeb.genruntimeconfig.cache
 C:\Users\Asus\source\repos\ornek_web_docs\ornekWeb\ornekWeb\obj\Debug\netcoreapp3.1\Razor\Views\User\UserCreate.cshtml.g.cs
 C:\Users\Asus\source\repos\ornek_web_docs\ornekWeb\ornekWeb\obj\Debug\netcoreapp3.1\Razor\Views\User\UserList.cshtml.g.cs
+C:\Users\Asus\source\repos\ornek_web_docs\ornekWeb\ornekWeb\obj\Debug\netcoreapp3.1\ornekWeb.csprojAssemblyReference.cache
